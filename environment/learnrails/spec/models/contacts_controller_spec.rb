@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Contact, type: :model do
+RSpec.describe ContactsController, type: :model do
   describe 'creation' do
     it 'can be created' do
       contacts = ContactsController.create(contact: "testcontact")
