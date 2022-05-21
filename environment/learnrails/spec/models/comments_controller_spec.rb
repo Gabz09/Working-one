@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe CommentsController, type: :model do
+RSpec.describe Comment, type: :model do
   describe 'creation' do
     it 'can be created' do
       comments = CommentsController.create(comment: "testcomment")
