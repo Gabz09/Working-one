@@ -9,14 +9,17 @@ class Calculator
   end
   
   def max
-      puts list.max
+      puts list[-1]
   end
   
   def odd
-      n = list.select(&:odd?)
-      print n
-      
-         
+      list.each do |n|
+          puts n.odd?
+      end 
+  end
+    
+  def hello
+      puts "Hello, I am your Calculator :)"
   end
 end
 
@@ -24,3 +27,4 @@ calculator = Calculator.new([2,4,5,1])
 calculator.sum
 calculator.max
 calculator.odd
+calculator.hello
